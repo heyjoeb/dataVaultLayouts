@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Data Vault</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+      <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Data Vault Layouts - Sign In</a>
+        <a href="index.html">Atrás</a>
+      </nav>
+
+      <div class="container-fluid main-container">
+       <div class="row justify-content-md-center">
+         <div class="col-12 col-md-3">
+
+           <div class="card">
+             <div class="card-header text-center">Admin Sign In</div> 
+             <div class="card-body">
+               <form class="form-sign-in">
+
+                <div class="form-label-group floating-labels">
+                  <input type="email" id="userName" class="form-control" placeholder="User Name" required autofocus>
+                  <label for="userName">User Name</label>
+                </div>
+
+                <div class="form-label-group floating-labels">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="form-label-group floating-labels">
+                  <input type="number" id="smsCode" class="form-control" placeholder="Password" required>
+                  <label for="smsCode">SMS code</label>
+                </div>
+                <div class="resend-sms d-flex justify-content-end">
+                  <a href="#">Re-send SMS code</a>
+                </div>
+
+                
+                <div class="button-container d-flex justify-content-center mt-4">
+                  <button class="btn btn-sm btn-primary" type="submit">Sign In</button>
+                </div>
+                <div class="text-center mt-4">
+                  <a href="">I can't sign in</a>
+                </div>
+              </form>
+             </div>
+           </div>
+
+         </div>
+       </div>
+      </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    </body>
+</html>

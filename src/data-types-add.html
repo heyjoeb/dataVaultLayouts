@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Data Vault</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+      <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Data Vault Layouts - Data Types - Add</a>
+        <a href="index.html">Atrás</a>
+      </nav>
+
+      <div class="container-fluid main-container">
+       <div class="row justify-content-md-center">
+         <div class="col-12 col-md-8">
+
+            <h1>Data Types - Add</h1>
+            <div class="btn-container mt-5">
+              <a href="" class="btn-sm btn-primary" data-toggle="modal" data-target="#dataTypeModal">Add</a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="dataTypeModal" tabindex="-1" role="dialog" aria-labelledby="dataTypeModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="dataTypeModalLabel">Add Data Type</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-datat-type-add">
+                      <div class="form-label-group floating-labels">
+                        <input type="email" id="datatTypeName" class="form-control" placeholder="Name" required autofocus>
+                        <label for="datatTypeName">Name</label>
+                      </div>
+
+                      <div class="form-group">
+                        <select class="form-control form-control">
+                          <option selected="true" disabled="disabled">Type</option>
+                          <option value="">string</option>
+                          <option value="">integer</option>
+                          <option value="">date</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="datatTypeDescription">Example textarea</label>
+                        <textarea class="form-control" id="datatTypeDescription" rows="3"></textarea>
+                        
+                      </div>
+
+                      <div class="form-label-group floating-labels">
+                        <input type="number" id="dataTypePrice" class="form-control" placeholder="Price" required>
+                        <label for="dataTypePrice">Price</label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+         </div>
+       </div>
+      </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      $('#dataTypeModal').modal('show')
+    </script>
+    </body>
+</html>

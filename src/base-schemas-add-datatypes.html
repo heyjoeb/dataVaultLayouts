@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Data Vault</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+      <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Data Vault Layouts - Base Schemas - Add</a>
+        <a href="index.html">Atrás</a>
+      </nav>
+
+      <div class="container-fluid main-container">
+       <div class="row justify-content-md-center">
+         <div class="col-12 col-md-8">
+
+            <h1>Base Schemas - Add</h1>
+            
+            <div class="card mt-5">
+             <div class="card-header">Add Base Schema</div> 
+             <div class="card-body">
+              <form action="">
+                <h2>Info</h2>
+                <div class="form-label-group floating-labels">
+                  <input type="email" id="schemaName" class="form-control" placeholder="Schema Name" required autofocus>
+                  <label for="schemaName">Name</label>
+                </div>
+                <div class="form-group">
+                  <select class="form-control form-control">
+                    <option selected="true" disabled="disabled">Data Category</option>
+                    <option value="">category 1</option>
+                    <option value="">category 2</option>
+                    <option value="">category 3</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">industry 1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">industry 2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">industry 3</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="baseSchemaDescription">Description</label>
+                  <textarea class="form-control" id="baseSchemaDescription" rows="3"></textarea>
+                </div>
+                <hr class="my-5">
+                <h2>Data Types</h2>
+                <a href="#">Add</a>
+                <hr class="my-5">
+                <h2>Price</h2>
+                <span class="price">$0.000</span>
+                <hr class="my-5">
+                <div class="btn-container">
+                    <button type="button" class="btn btn-primary mr-4">Save</button>
+                    <button type="button" class="btn btn-secondary mr-4"" data-dismiss="modal">Cancel</button>
+                    <a href="#">Save as Draft</a>
+                  </div>
+              </form>
+             </div>
+            </div>
+
+
+         </div>
+       </div>
+      </div>
+
+      <!-- Modal -->
+            <div class="modal fade" id="dataTypesModal" tabindex="-1" role="dialog" aria-labelledby="dataTypesModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="dataTypesModalLabel">Selevct Data Types</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-datat-type-add">
+                      <h2>Search</h2>
+                      <div class="form-label-group floating-labels">
+                        <input type="text" id="datatTypeSearch" class="form-control" placeholder="Search" required autofocus>
+                        <label for="datatTypeSearch">Search</label>
+                      </div>
+                      <h2 class="mt-5">Available</h2>
+                      <table class="table mt-5 table-striped">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col">Select</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="select1">
+                                <label class="form-check-label sr-only" for="select1">
+                                  Select
+                                </label>
+                              </div>
+                            </td>
+                            <td>data type 1</td>
+                            <td>$0.25</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corporis sit soluta.</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="select1">
+                                <label class="form-check-label sr-only" for="select1">
+                                  Select
+                                </label>
+                              </div>
+                            </td>
+                            <td>data type 2</td>
+                            <td>$0.25</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corporis sit soluta.</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="select1">
+                                <label class="form-check-label sr-only" for="select1">
+                                  Select
+                                </label>
+                              </div>
+                            </td>
+                            <td>data type 3</td>
+                            <td>$0.25</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corporis sit soluta.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      $('#dataTypesModal').modal('show')
+    </script>
+    </body>
+</html>
